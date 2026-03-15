@@ -1,0 +1,41 @@
+# Finmo - File Integrity Monitor
+# Edit this file to set up what Finmo watches and how it alerts you.
+
+# Folders and files to monitor
+# Add your own paths here. Finmo will scan them recursively.
+watched_paths:
+  - /etc/
+  - /bin/
+  - /usr/bin/
+  # Windows examples (uncomment to use):
+  # - "C:/Windows/System32"
+  # - "C:/Users/YourName/Documents"
+
+# Paths to ignore
+excluded_paths:
+  - /proc/
+  - /sys/
+  - /tmp/
+  - "*.log"
+  - "*.tmp"
+  - "*.swp"
+
+# Telegram bot credentials
+# See README for how to set up a Telegram bot
+telegram:
+  enabled: false
+  bot_token: ""
+  chat_id: ""
+
+# Email credentials (Gmail with App Password)
+# See README for how to get a Gmail App Password
+email:
+  enabled: false
+  smtp_host: "smtp.gmail.com"
+  smtp_port: 587
+  sender: ""
+  password: ""
+  receiver: ""
+
+# Database location
+database_path: "./data/finmo.db"
