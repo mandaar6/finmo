@@ -1,4 +1,4 @@
-# Finmo — File Integrity Monitor
+# Finmo - File Integrity Monitor
 
 A simple file integrity monitoring tool that watches files and directories for unauthorized changes using SHA-256 hashing. When a change is detected it sends alerts via Telegram and/or Email.
 
